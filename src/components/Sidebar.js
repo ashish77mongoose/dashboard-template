@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div className="h-screen flex flex-col justify-between bg-white shadow-lg shadow-themecyan-lighter  overflow-auto w-full py-8    ">
       <h4
         className="cursor-pointer text-center px-2"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/overview")}
       >
         Notarize HQ
       </h4>
@@ -33,7 +33,7 @@ const Sidebar = () => {
       </div>
       <div>
         <NavLink
-          to={"/login"}
+          to={"/"}
           className={({ isActive }) =>
             `relative font-semibold text-red-dark  py-4 w-full px-4  flex gap-4 items-center cursor-pointer duration-300 hover:bg-red-light  `
           }

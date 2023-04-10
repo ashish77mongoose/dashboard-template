@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Routes>
-      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/" element={<Login />} />
       <Route path="/" element={<Dashboard />}>
         <Route index path="overview" element={<DashboardLanding />}></Route>
         <Route path="profile" element={<Profile />}></Route>

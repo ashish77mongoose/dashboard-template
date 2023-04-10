@@ -139,7 +139,7 @@ select:-webkit-autofill:focus {
     @apply flex justify-center items-center;
   }
   .btn {
-    @apply h-[45px] cursor-pointer  font-medium text-[16px] rounded-2xl  px-[28px]  mycenter active:scale-95;
+    @apply h-[52px] cursor-pointer  font-medium text-[16px] rounded-sm  px-[28px]  mycenter active:scale-95;
   }
   .btn-primary{
 @apply bg-themecyan-darker text-white;

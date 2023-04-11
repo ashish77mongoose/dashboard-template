@@ -3,17 +3,25 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { sideBarLinks } from "../utils/constants";
 import { reactIcons } from "./../utils/icons";
 
-const Sidebar = () => {
+const Sidebar = ({ setIsOpen }) => {
   const navigate = useNavigate();
 
   return (
     <div className="h-screen flex flex-col justify-between bg-white shadow-lg shadow-themecyan-lighter  overflow-auto w-full py-8    ">
-      <h4
-        className="cursor-pointer text-center px-2"
-        onClick={() => navigate("/overview")}
-      >
-        Notarize HQ
-      </h4>
+      <div className="flex items-center gap-2 justify-between pr-1">
+        <h4
+          className="cursor-pointer  px-2"
+          onClick={() => navigate("/overview")}
+        >
+          FXFort
+        </h4>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="w-10 h-10 mycenter bg-themecyan-lighter rounded-full text-3xl"
+        >
+          {reactIcons.arrowleft}
+        </button>
+      </div>
 
       <div className="flex flex-col  mt-8 xxl:mt-12 flex-1">
         {sideBarLinks.map((item, index) => (

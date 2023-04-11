@@ -96,7 +96,7 @@ select:-webkit-autofill:focus {
     scroll-behavior: smooth;
   }
   body{
-    @apply bg-themecyan-lighter;
+    @apply bg-themecyan-lighter overflow-x-hidden;
   }
   h1,.h1 {
     @apply text-black font-montserrat text-[40px] font-black tablet:text-[50px] md:text-[56px] lg:text-[72px] xxl:text-[76px];
@@ -150,6 +150,25 @@ select:-webkit-autofill:focus {
    .btn-outline-danger {
     @apply btn  rounded-md border-2 border-red-dark text-red-dark   hover:bg-red-dark  px-[20px]  mycenter  hover:text-white transition-all duration-300;
   }
+  .data-grid .MuiDataGrid-root,.data-grid .MuiDataGrid-toolbarContainer,.data-grid .MuiDataGrid-main,.data-grid .MuiDataGrid-footerContainer{
+    @apply w-full !important;
+  }
+    .data-grid .MuiDataGrid-columnHeaderTitle {
+      @apply text-grey-190 !important;
+    }
+  
+    .data-grid .MuiDataGrid-cellContent,
+    .data-grid .MuiButton-text.MuiButton-textPrimary,
+    .data-grid .MuiSvgIcon-root,
+    .data-grid .MuiSelect-select.MuiTablePagination-select,
+    .data-grid .MuiTablePagination-selectLabel,
+    .data-grid .MuiTablePagination-displayedRows {
+      @apply text-black !important;
+    }
+  
+    .data-grid .MuiDataGrid-columnHeader:focus-within {
+      @apply outline-none !important;
+    }
  
 }
 @layer utilities {
